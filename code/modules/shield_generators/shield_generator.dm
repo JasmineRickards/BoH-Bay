@@ -171,7 +171,7 @@
 	else if(running > SHIELD_RUNNING)
 		if(inefficency_counter > 0)
 			inefficency_counter -= 0.01
-		upkeep_power_usage = round(ENERGY_UPKEEP_IDLE * idle_multiplier * (field_radius * 2) * upkeep_multiplier) // Approximates number of turfs.
+		upkeep_power_usage = round(ENERGY_UPKEEP_IDLE * idle_multiplier * field_radius * upkeep_multiplier) // Approximates number of turfs.
 
 	if(powernet && (running >= SHIELD_RUNNING) && !input_cut)
 		var/energy_buffer = 0
