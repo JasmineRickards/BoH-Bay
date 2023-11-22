@@ -166,12 +166,12 @@
 	mitigation_physical = between(0, mitigation_physical - MITIGATION_LOSS_PASSIVE, mitigation_max)
 
 	if(running == SHIELD_RUNNING)
-		inefficency_counter += 0.005
+		inefficency_counter += 0.000005
 		upkeep_power_usage = round((field_segments.len - damaged_segments.len) * ENERGY_UPKEEP_PER_TILE * (upkeep_multiplier * (1 + inefficency_counter)))
 	else if(running > SHIELD_RUNNING)
 		if(inefficency_counter > 0)
 			inefficency_counter -= 0.01
-		upkeep_power_usage = round(ENERGY_UPKEEP_IDLE * idle_multiplier * (field_radius * 8) * upkeep_multiplier) // Approximates number of turfs.
+		upkeep_power_usage = round(ENERGY_UPKEEP_IDLE * idle_multiplier * (field_radius * 2) * upkeep_multiplier) // Approximates number of turfs.
 
 	if(powernet && (running >= SHIELD_RUNNING) && !input_cut)
 		var/energy_buffer = 0
