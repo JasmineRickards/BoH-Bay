@@ -733,6 +733,7 @@
 	name = "Rifles";
 	req_access = null
 	},
+/obj/item/weapon/rig/security,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "abI" = (
