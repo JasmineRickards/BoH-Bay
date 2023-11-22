@@ -53,13 +53,13 @@
 	desc = "A hardsuit, designed for response teams and the like. Designed for engineering use and bomb disposal. Has orange highlights."
 	suit_type = "emergency response engineer"
 	icon_state = "ert_engineer_rig"
-		
+
 	armor = list( //This is the guy you throw at a bomb, or a hole in the ship.
 		melee = ARMOR_MELEE_MAJOR,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
 		laser = ARMOR_LASER_MAJOR,
 		energy = ARMOR_ENERGY_RESISTANT,
-		bomb = ARMOR_BOMB_SHIELDED, 
+		bomb = ARMOR_BOMB_SHIELDED,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SHIELDED
 		)
@@ -139,11 +139,36 @@
 		/obj/item/rig_module/cooling_unit
 		)
 
+/obj/item/weapon/rig/security
+	name = "SWAT emergency hardsuit control module"
+	desc = "A hardsuit, designed for response teams and the like. Designed for front line security operations. Has red highlights."
+	suit_type = "SWAT"
+	icon_state = "ert_security_rig"
+
+	armor = list( //This is the guy you throw at antags.
+		melee = ARMOR_MELEE_VERY_HIGH,
+		bullet = ARMOR_BALLISTIC_RIFLE,
+		laser = ARMOR_LASER_MAJOR,
+		energy = ARMOR_ENERGY_MINOR,
+		bomb = ARMOR_BOMB_RESISTANT,
+		bio = ARMOR_BIO_SHIELDED,
+		rad = ARMOR_RAD_RESISTANT
+		)
+
+	initial_modules = list(
+		/obj/item/rig_module/ai_container,
+		/obj/item/rig_module/maneuvering_jets,
+		/obj/item/rig_module/grenade_launcher,
+		/obj/item/rig_module/mounted/egun,
+		/obj/item/rig_module/cooling_unit
+		)
+
+
 /obj/item/weapon/rig/ert/assetprotection
 	name = "heavy emergency response suit control module"
 	desc = "A very heavy hardsuit, modified to take on the galaxies most hostile environments, this one appears to have a LOT of armour. Do not mess with the person wearing this."
 	icon_state = "asset_protection_rig"
-	
+
 	armor = list( //This is the guy you throw at everything.
 		melee = ARMOR_MELEE_VERY_HIGH,
 		bullet = ARMOR_BALLISTIC_RIFLE,
