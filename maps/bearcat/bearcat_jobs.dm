@@ -13,7 +13,7 @@
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
 	                    SKILL_WEAPONS     = SKILL_MAX)
-	skill_points = 30
+	skill_points = 36
 
 /datum/job/captain/equip(var/mob/living/carbon/human/H)
 	. = ..()
@@ -71,7 +71,7 @@
 	                    SKILL_ELECTRICAL   = SKILL_MAX,
 	                    SKILL_ATMOS        = SKILL_MAX,
 	                    SKILL_ENGINES      = SKILL_MAX)
-	skill_points = 30
+	skill_points = 38
 
 /datum/job/doctor
 	title = "Doc"
@@ -134,7 +134,7 @@
 	                    SKILL_ELECTRICAL   = SKILL_MAX,
 	                    SKILL_ATMOS        = SKILL_MAX,
 	                    SKILL_ENGINES      = SKILL_MAX)
-	skill_points = 20
+	skill_points = 24
 
 /datum/job/cyborg
 	supervisors = "your laws and the Captain"

@@ -66,7 +66,7 @@
 	                    SKILL_MEDICAL = SKILL_MAX,
 	                    SKILL_ANATOMY = SKILL_MAX,
 	                    SKILL_CHEMISTRY = SKILL_MAX)
-	skill_points = 26
+	skill_points = 32
 
 /datum/job/submap/voxship_vox/engineer
 	title = "Shard Technician"
@@ -105,7 +105,7 @@
 	                    SKILL_MEDICAL = SKILL_ADEPT,
 	                    SKILL_ANATOMY = SKILL_ADEPT,
 	                    SKILL_CHEMISTRY = SKILL_ADEPT)
-	skill_points = 26
+	skill_points = 36
 
 /datum/job/submap/voxship_vox/quill
 	title = "Shard Quill"
@@ -147,7 +147,7 @@
 	                    SKILL_MEDICAL = SKILL_EXPERT,
 	                    SKILL_ANATOMY = SKILL_EXPERT,
 	                    SKILL_CHEMISTRY = SKILL_EXPERT)
-	skill_points = 30
+	skill_points = 34
 
 #define VOXSHIP_OUTFIT_JOB_NAME(job_name) ("Vox Asteroid Base - Job - " + job_name)
 /decl/hierarchy/outfit/job/voxship

@@ -13,7 +13,7 @@
 	                    SKILL_COMBAT      = SKILL_MAX,
 	                    SKILL_HAULING     = SKILL_MAX,
 	                    SKILL_PILOT       = SKILL_BASIC)
-	skill_points = 4 //hahaha no not when you get min skills bucko
+	skill_points = 8 //hahaha no not when you get min skills bucko
 
 /obj/effect/submap_landmark/spawnpoint/voxship_crew/armalis
 	name = "Shard Martinet"

@@ -20,7 +20,7 @@
 	max_skill = list(   SKILL_COMBAT      = SKILL_MAX,
 	                    SKILL_WEAPONS     = SKILL_MAX,
 	                    SKILL_FORENSICS   = SKILL_MAX)
-	skill_points = 16
+	skill_points = 24
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/security/maa
 	allowed_branches = list(
 		/datum/mil_branch/fleet,
@@ -60,7 +60,7 @@
 	selection_color = "#557e38"
 	minimal_player_age = 12
 	economic_power = 7
-	skill_points = 26
+	skill_points = 28
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/squad_lead
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
@@ -91,7 +91,7 @@
 	selection_color = "#557e38"
 	economic_power = 4
 	minimal_player_age = 8
-	skill_points = 24
+	skill_points = 28
 	minimum_character_age = list(SPECIES_HUMAN = 20)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/combat_tech
 	min_skill = list(	SKILL_CONSTRUCTION = SKILL_ADEPT,
@@ -116,14 +116,14 @@
 			            access_aquila, access_eva, access_inftech)
 	alt_titles = list(
 		"Combat Engineer")
-
+/*
 /datum/job/combat_tech/is_position_available()
 	if(..())
 		for(var/mob/M in GLOB.player_list)
 			if(M.client && M.mind && M.mind.assigned_role == "Squad Lead")
 				return TRUE
 	return FALSE
-
+*/
 /datum/job/combat_tech/get_description_blurb()
 	return "<span class='warning'>You are NOT Security. Ignoring this will get you job banned, or worse.</span> - You are the singular Combat Technician in the squad. Your duty is to provide both firepower and demolitions as required. You may assume Command if no Squad Leader is present."
 
@@ -137,7 +137,7 @@
 	selection_color = "#557e38"
 	economic_power = 4
 	minimal_player_age = 8
-	skill_points = 24
+	skill_points = 28
 	minimum_character_age = list(SPECIES_HUMAN = 20)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/combat_medic
 	min_skill = list(SKILL_EVA    = SKILL_BASIC,
@@ -165,14 +165,14 @@
 		)
 	access = list(access_maint_tunnels, access_solgov_crew, access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
 			            access_aquila, access_eva, access_infmed)
-
+/*
 /datum/job/combat_medic/is_position_available()
 	if(..())
 		for(var/mob/M in GLOB.player_list)
 			if(M.client && M.mind && M.mind.assigned_role == "Squad Lead")
 				return TRUE
 	return FALSE
-
+*/
 /datum/job/combat_medic/get_description_blurb()
 	return "<span class='warning'>You are NOT Security. Ignoring this will get you job banned, or worse.</span> - You are the singular Combat Medic in the squad. Your duty is to provide medical assistance as required. You may assume Command if no Squad Leader is present."
 
@@ -185,7 +185,7 @@
 	minimal_player_age = 6
 	supervisors = "the Combat Technician and Squad Leader"
 	selection_color = "#557e38"
-	skill_points = 18
+	skill_points = 22
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry
 	min_skill = list(	SKILL_COMBAT       = SKILL_ADEPT,
@@ -209,14 +209,14 @@
 	alt_titles = list(
 		"Grenadier",
 		"Assaultman")
-
+/*
 /datum/job/grunt/is_position_available()
 	if(..())
 		for(var/mob/M in GLOB.player_list)
 			if(M.client && M.mind && M.mind.assigned_role == "Squad Lead")
 				return TRUE
 	return FALSE
-
+*/
 /datum/job/grunt/get_description_blurb()
 	return "<span class='warning'>You are NOT Security. Ignoring this will get you job banned, or worse.</span> - You are a Marine! Your duty is to listen to the Squad Leader. If they're not present, the Combat Technician may pull rank. Do your best not to die, while also taking orders. Oorah!"
 
@@ -243,7 +243,7 @@
 		SKILL_COMBAT     = SKILL_EXPERT,
 		SKILL_WEAPONS     = SKILL_EXPERT
 	)
-	skill_points = 30
+	skill_points = 34
 	access = list(access_psiadvisor, access_security, access_medical, access_maint_tunnels, access_bridge, access_RC_announce, access_solgov_crew, access_hangar)
 	minimal_access = list()
 	software_on_spawn = list(
@@ -282,7 +282,7 @@
 	allowed_ranks = list(/datum/mil_rank/civ/contractor)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_EXPERT,
 	                    SKILL_FINANCE     = SKILL_BASIC)
-	skill_points = 20
+	skill_points = 24
 	minimum_character_age = list(SPECIES_HUMAN = 28)
 
 	access = list(access_adjudicator, access_lawyer, access_sec_doors, access_brig, access_maint_tunnels, access_medical,
